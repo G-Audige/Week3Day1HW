@@ -29,7 +29,7 @@ console.log(maxofThreethat(3,2,1))
 // (Complete) Define a function, as a function declaration, isCharAVowelthat takes a character as an argument and returns true if it is a vowel, false otherwise.
 function isCharAVowel(input){
     const charArray = input.split("")
-    if(charArray.length = 1){
+    if(charArray.length == 1){
         if(charArray[0] == "A" || charArray[0] == "a" || charArray[0] == "E" || charArray[0] == "e" || charArray[0] == "I" || charArray[0] == "i" || charArray[0] == "O" || charArray[0] == "o" || charArray[0] == "U" || charArray[0] == "u"){
             return "True"
         }
@@ -42,7 +42,7 @@ function isCharAVowel(input){
     }
 }
 
-console.log(isCharAVowel('a'))
+console.log(isCharAVowel('g'))
 
 
 // (Complete) Define a function, as a function expression, sumArraythat takes an array of numbers and returns the sum of those numbers. For example, sumArray([2, 4, 5]);would return 11.
