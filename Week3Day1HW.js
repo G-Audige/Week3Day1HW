@@ -12,7 +12,6 @@ console.log(maxofTwoNumbersthat(2,4))
 
 // (Complete) Define a function, as a function expression, maxOfThreethat takes three numbers as arguments and returns the largest of them. Again, the Math.max method is not allowed.
 function maxofThreethat(num1,num2,num3){
-    let max
     if(num1 >= num2 && num1 >= num3){
         return num1
     }
@@ -34,8 +33,11 @@ function isCharAVowel(input){
         if(charArray[0] == "A" || charArray[0] == "a" || charArray[0] == "E" || charArray[0] == "e" || charArray[0] == "I" || charArray[0] == "i" || charArray[0] == "O" || charArray[0] == "o" || charArray[0] == "U" || charArray[0] == "u"){
             return "True"
         }
+        else{
+            return "False"
+        }
     }
-    else{
+    else {
         return "False"
     }
 }
