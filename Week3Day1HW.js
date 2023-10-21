@@ -27,10 +27,9 @@ console.log(maxofThreethat(3,2,1))
 
 
 // (Complete) Define a function, as a function declaration, isCharAVowelthat takes a character as an argument and returns true if it is a vowel, false otherwise.
-function isCharAVowel(input){
-    const charArray = input.split("")
-    if(charArray.length == 1){
-        if(charArray[0] == "A" || charArray[0] == "a" || charArray[0] == "E" || charArray[0] == "e" || charArray[0] == "I" || charArray[0] == "i" || charArray[0] == "O" || charArray[0] == "o" || charArray[0] == "U" || charArray[0] == "u"){
+function isCharAVowel(input){ad
+    if(input.length == 1){
+        if(input == "A" || input == "a" || input == "E" || input == "e" || input == "I" || input == "i" || input == "O" || input == "o" || input == "U" || input == "u"){
             return "True"
         }
         else{
@@ -42,7 +41,7 @@ function isCharAVowel(input){
     }
 }
 
-console.log(isCharAVowel('g'))
+console.log(isCharAVowel('Ao'))
 
 
 // (Complete) Define a function, as a function expression, sumArraythat takes an array of numbers and returns the sum of those numbers. For example, sumArray([2, 4, 5]);would return 11.
@@ -89,14 +88,19 @@ function reverseStringthat(input){
 console.log(reverseStringthat('Tap'))
 
 // Define a function, as a function expression, longestStringInArraythat takes an array of strings as an argument and returns the length of the longest string.
-// const sports = ['Soccer', 'Football', 'Hockey', 'Baseball', 'Volleyball']
+const sports = ['Soccer', 'Football', 'Hockey', 'Baseball', 'Volleyball']
 
-// function longestStringInArraythat(sports){
-//     let longest = 0
-//     for(i = 0, )
-// }
+function longestStringInArraythat(sports){
+    let longest = 0
+    for(i = 0; i < sports.length; i++){
+        if(sports[i].length > longest) {
+            longest = sports[i].length
+        }  
+    }
+    return longest
+}
 
-// console.log(longestStringInArraythat(sports))
+console.log(longestStringInArraythat(sports))
 
 
 // Define a function, as a function declaration, stringsLongerThanthat takes an array of strings and a number as arguments; and returns an array of the strings that are longer than the number passed in. For example, stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3);would return ["hello", "morning"].
