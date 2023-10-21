@@ -1,5 +1,5 @@
 // (Complete) Define a function, as a function declaration, maxOfTwoNumbersthat takes two numbers as arguments and returns the largest of them. If they are the same, return that number. Use the if-else construct or a ternary expression - the Math.max method is not allowed.
-function maxofTwoNumbersthat(num1, num2){
+function maxofTwoNumbersthat(num1, num2) {
     if (num1 >= num2){
         return num1
     }
@@ -27,7 +27,7 @@ console.log(maxofThreethat(3,2,1))
 
 
 // (Complete) Define a function, as a function declaration, isCharAVowelthat takes a character as an argument and returns true if it is a vowel, false otherwise.
-function isCharAVowel(input){
+function isCharAVowelthat(input) {
     if(input.length == 1){
         if(input == "A" || input == "a" || input == "E" || input == "e" || input == "I" || input == "i" || input == "O" || input == "o" || input == "U" || input == "u"){
             return "True"
@@ -41,7 +41,7 @@ function isCharAVowel(input){
     }
 }
 
-console.log(isCharAVowel('Ao'))
+console.log(isCharAVowelthat('Ao'))
 
 
 // (Complete) Define a function, as a function expression, sumArraythat takes an array of numbers and returns the sum of those numbers. For example, sumArray([2, 4, 5]);would return 11.
@@ -59,10 +59,10 @@ console.log(sumArraythat(input))
 // (Complete) Define a function, as a function declaration, multiplyArraythat takes an array of numbers and returns the product those numbers. For example, multiplyArray([2, 4, 5]);would return 40.
 const input2 = [1,7,3,4]
 
-function multiplyArraythat(input2){
+function multiplyArraythat(input) {
     let sum = 1
-    for(i = 0; i < input2.length; i++){
-        sum *= input2[i]
+    for(i = 0; i < input.length; i++){
+        sum *= input[i]
     }
     return sum
 }
@@ -70,16 +70,17 @@ function multiplyArraythat(input2){
 console.log(multiplyArraythat(input2))
 
 
-// Define a function, as a function expression, numArgsthat returns the number of arguments passed to the function when called.
-// const numArgstthat = function() {
+// (Complete) Define a function, as a function expression, numArgsthat returns the number of arguments passed to the function when called.
+const argArray = ["Blue", "Red", "Yellow"]
+const numArgsthat = function(x,y,z,a) {
+    return arguments.length
+}
 
-// }
-
-// console.log(numArgsthat)
+console.log(numArgsthat(argArray,9,"Piano"))
 
 
 // (Complete) Define a function, as a function declaration, reverseStringthat takes a string, reverses the characters, and returns it. For example, reverseString('rockstar');would return the string "ratskcor".
-function reverseStringthat(input){
+function reverseStringthat(input) {
     const charArray = input.split("")
     const revCharArray = []
     for (i = charArray.length - 1; i >= 0; i--){
@@ -108,7 +109,7 @@ console.log(longestStringInArraythat(sports))
 
 // (Complete) Define a function, as a function declaration, stringsLongerThanthat takes an array of strings and a number as arguments; and returns an array of the strings that are longer than the number passed in. For example, stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3);would return ["hello", "morning"].
 const holidays = ['Christmas', 'Easter', 'Halloween', 'Thanksgiving', '']
-function stringsLongerThanThat(strings, number) {
+function stringsLongerThanthat(strings, number) {
     const longer = []
     for(let i = 0; i < strings.length; i++) {
         if(strings[i].length > number) {
@@ -118,4 +119,4 @@ function stringsLongerThanThat(strings, number) {
     return longer
 }
 
-console.log(stringsLongerThanThat(holidays,6))
+console.log(stringsLongerThanthat(holidays,6))
