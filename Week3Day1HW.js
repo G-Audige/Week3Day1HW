@@ -27,7 +27,7 @@ console.log(maxofThreethat(3,2,1))
 
 
 // (Complete) Define a function, as a function declaration, isCharAVowelthat takes a character as an argument and returns true if it is a vowel, false otherwise.
-function isCharAVowel(input){ad
+function isCharAVowel(input){
     if(input.length == 1){
         if(input == "A" || input == "a" || input == "E" || input == "e" || input == "I" || input == "i" || input == "O" || input == "o" || input == "U" || input == "u"){
             return "True"
@@ -87,7 +87,7 @@ function reverseStringthat(input){
 
 console.log(reverseStringthat('Tap'))
 
-// Define a function, as a function expression, longestStringInArraythat takes an array of strings as an argument and returns the length of the longest string.
+// (Complete) Define a function, as a function expression, longestStringInArraythat takes an array of strings as an argument and returns the length of the longest string.
 const sports = ['Soccer', 'Football', 'Hockey', 'Baseball', 'Volleyball']
 
 function longestStringInArraythat(sports){
@@ -103,4 +103,16 @@ function longestStringInArraythat(sports){
 console.log(longestStringInArraythat(sports))
 
 
-// Define a function, as a function declaration, stringsLongerThanthat takes an array of strings and a number as arguments; and returns an array of the strings that are longer than the number passed in. For example, stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3);would return ["hello", "morning"].
+// (Complete) Define a function, as a function declaration, stringsLongerThanthat takes an array of strings and a number as arguments; and returns an array of the strings that are longer than the number passed in. For example, stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3);would return ["hello", "morning"].
+const holidays = ['Christmas', 'Easter', 'Halloween', 'Thanksgiving', '']
+function stringsLongerThanThat(strings, number) {
+    const longer = []
+    for(let i = 0; i < strings.length; i++) {
+        if(strings[i].length > number) {
+            longer.push(strings[i])
+        }
+    }
+    return longer
+}
+
+console.log(stringsLongerThanThat(holidays,6))
